@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:betany="clr-namespace:Betany;assembly=Betany"
+             xmlns:helpers="clr-namespace:Betany.Helpers;assembly=Betany"
+             x:Class="Betany.Helpers.MasterPageView">
+    <StackLayout>
+        <ListView x:Name="NavigationListView" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type betany:MasterNavigationItem}">
+                    <betany:MasterNavigationItem Title="Home" Icon="home.png" Target="{x:Type helpers:HomePageView}"/>
+                    <betany:MasterNavigationItem Title="Home" Icon="basket.png" Target="{x:Type helpers:BasketView}"/>
+                    <betany:MasterNavigationItem Title="Home" Icon="contacts.png" Target="{x:Type helpers:ContactusView}"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Icon}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
