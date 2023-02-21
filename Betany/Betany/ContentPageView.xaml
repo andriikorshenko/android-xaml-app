@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Betany.ContentPageView">
+
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="6*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Text="Welcome to Betany's Pie Shop" Grid.Row="0" Grid.Column="0" />
+        <Label Text="User name" Grid.Row="1" Grid.Column="0" FontSize="Medium" />
+        <Label Text="Password" Grid.Row="2" Grid.Column="0" FontSize="Medium" />
+        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Enter your yser name" />
+        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Enter your password" />
+    </Grid>
+    
+</ContentPage>
