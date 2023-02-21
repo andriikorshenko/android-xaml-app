@@ -24,3 +24,5 @@ C:\Expirimentation\Betany\Betany\Betany\obj\Debug\netstandard2.0\Helpers\HomePag
 C:\Expirimentation\Betany\Betany\Betany\obj\Debug\netstandard2.0\Helpers\PieOverviewView.xaml.g.cs
 C:\Expirimentation\Betany\Betany\Betany\obj\Debug\netstandard2.0\NavigationPageView.xaml.g.cs
 C:\Expirimentation\Betany\Betany\Betany\obj\Debug\netstandard2.0\TabbedPageView.xaml.g.cs
+C:\Expirimentation\Betany\Betany\Betany\obj\Debug\netstandard2.0\Helpers\MasterPageView.xaml.g.cs
+C:\Expirimentation\Betany\Betany\Betany\obj\Debug\netstandard2.0\MasterDetailPageView.xaml.g.cs

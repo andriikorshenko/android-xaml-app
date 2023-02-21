@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:betany="clr-namespace:Betany;assembly=Betany"
              xmlns:helpers="clr-namespace:Betany.Helpers;assembly=Betany"
-             x:Class="Betany.Helpers.MasterPageView">
+             x:Class="Betany.Helpers.MasterPageView"
+             Title="Navigation">
     <StackLayout>
         <ListView x:Name="NavigationListView" x:FieldModifier="public">
             <ListView.ItemsSource>

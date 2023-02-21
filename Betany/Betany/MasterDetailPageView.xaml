@@ -1,6 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helpers="clr-namespace:Betany.Helpers;assembly=Betany"
              x:Class="Betany.MasterDetailPageView">
-    
-</ContentPage>
+    <MasterDetailPage.Master>
+        <helpers:MasterPageView x:Name="masterView"></helpers:MasterPageView>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <helpers:HomePageView>
+                </helpers:HomePageView>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
